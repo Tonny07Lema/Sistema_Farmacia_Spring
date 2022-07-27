@@ -86,9 +86,6 @@ public class PedidoDetalle implements Serializable {
         this.pedido = pedido;
     }
 
-
-
-
     public int getId() {
         return id;
     }

@@ -39,7 +39,7 @@ public class ProductoControlador {
         List<Producto> listaProducto = productoServicio.findAll();
         return new ResponseEntity<List<Producto>>(listaProducto, HttpStatus.OK);
     }
-
+//hola
     @GetMapping("producto/categoria/{nombreCategoria}")
     public ResponseEntity<List<ProductoSucursal>> getProductoByCategoria(@PathVariable String nombreCategoria, HttpSession httpSession) {
         Sucursal sucursal = (Sucursal) httpSession.getAttribute("Sucursal");
